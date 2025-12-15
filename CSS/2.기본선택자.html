@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. 기본 선택자( * )</title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../HTML/image/바다.jpg" alt="" />
+  </body>
+</html>
+
+<!-- 
+  == 정리 ==
+  1. * 는 html의 모든 영역 전체를 의미함
+  2. 스타일 규칙, margin / padding(요소 주변의 여백을 조정해주는 역할)
+    margin(바깥여백): 
+      요소 바깥쪽 여백 설정
+      다른 요소와의 간격 조정
+      음수값 사용 가능(겹치기 가능)
+      - margin: 20px (상하좌우 20px 바깥여백)
+      - 각 방향의 바깥여백 지정
+      margin-top
+      margin-left
+      margin-right
+      margin-bottom
+      - shorthand(시계방향)
+      margin : 10px 20px 30px 40px (위 오른쪽 아래 왼쪽 의미)
+
+  3. padding(요소 안 여백, 컨텐츠와 테두리 사이)
+    음수값 사용 불가,
+    요소의 실제 크기에 영향을 줌
+      margin과 동일하게 크기조절 가능
+  
+  4. 정리
+┌─────────────────────────────┐
+│          Margin             │  ← 바깥 여백 (투명)
+│  ┌───────────────────────┐  │
+│  │       Border          │  │  ← 테두리
+│  │  ┌─────────────────┐  │  │
+│  │  │    Padding      │  │  │  ← 안쪽 여백 (배경 적용)
+│  │  │  ┌───────────┐  │  │  │
+│  │  │  │ Content   │  │  │  │  ← 실제 내용
+│  │  │  └───────────┘  │  │  │
+│  │  └─────────────────┘  │  │
+│  └───────────────────────┘  │
+└─────────────────────────────┘
+
+  5. 실무
+    버튼 카드 내부의 여백 = padding
+    요소 간 간격 = margin
+    레이아웃 깨짐 방지(padding 시 발생 가능성 O)
+      = boxsizing: border-box
+    정렬문제 = margin: 0 auto
+-->
