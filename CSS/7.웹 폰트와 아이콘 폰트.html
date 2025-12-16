@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7. 웹 폰트와 아이콘 폰트 사용하기(구글폰트, 폰트어썸)</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap"); /*구글 폰트: import 방식(html 방식도 O)*/
+      div {
+        font-family: "Gasoek One", sans-serif; /*글꼴*/
+        font-weight: 400; /*글자 두께*/
+        font-style: normal; /*글자 스타일*/
+        font-size: 50px;
+      }
+    </style>
+    <!-- 구글 폰트 html로 불러오기 ▼(CSS에서는 동일) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h4>메뉴를 선택하시오!</h4>
+    <div>메뉴1</div>
+    <div>메뉴2</div>
+    <div>메뉴3</div>
+    <hr />
+    <h4>메뉴를 선택하시오</h4>
+    <li>
+      <!-- 폰트어썸의 태그 그대로 복사 ▼ -->
+      <i class="fa-solid fa-pizza-slice"></i>
+      <a href="#">피자</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-cake-candles"></i>
+      <a href="#">케이크</a>
+    </li>
+    <li>
+      <i class="fa-solid fa-burger"></i>
+      <a href="#">햄버거</a>
+    </li>
+  </body>
+  <!-- 폰트 어썸 연결하기(아이콘, 일반적으로 JS에서 연결, 로그인 후 진행) ▼ -->
+  <script
+    src="https://kit.fontawesome.com/b1e6166385.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
+
+<!-- 
+  === 정리 ===
+  1. 구글 폰트 연결하여 글꼴 사용하기
+    앞서 2가지 방법(@import, html)으로 구글폰트 연결하기
+    원하는 글꼴 CSS 코드 받아서 적용하기
+
+  2. 폰트 어썸을 이용하여 아이콘 사용하기
+    script 부분을 통해 링크 연결(로그인 필요)
+    원하는 아이콘의 코드를 받아 ctrl+v하기
+-->
